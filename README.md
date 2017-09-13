@@ -4,7 +4,7 @@ Authentication client for [Instagram API](https://www.instagram.com/developer/).
 
 ## About
 
-Want to start using an Instagram API right away, but don't know how to get an acess token?
+Want to start using Instagram API right away, but don't know how to get an acсess token?
 Here is a simple tool that let's you do that.
 
 **Important**: this client works for implicit authentication only. This type of authentication [is not as secure](https://www.instagram.com/developer/authentication/) as server-side and therefore is disabled by default.
