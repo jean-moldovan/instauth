@@ -1,7 +1,8 @@
 # InstAuth
 
-## About
 Authentication client for [Instagram API](https://www.instagram.com/developer/).
+
+## About
 
 Want to start using an Instagram API right away, but don't know how to get an acess token?
 Here is a simple tool that let's you do that.
@@ -12,8 +13,22 @@ If you still want to continue using it, you need to enable `implicit OAuth` in y
 
 ## How to use
 
-* Make sure `implicit OAuth` is enabled in your app's [settings page](https://www.instagram.com/developer/clients/manage/)
-* Copy `Client ID` from the same page
+### Manual deploy
+* Clone the repo
+* Publish the source code via [Netlify](https://www.netlify.com/) or any other deployment tool of your choice
+* Go to your app's [settings page](https://www.instagram.com/developer/clients/manage/)
+* Go to security tab
+* Add URI of a newly published client to `Valid redirect URIs` text field
+* Make sure `implicit OAuth` is enabled. Copy `Client ID` from the same page
+* Go to the client you've just published
+* Paste `Client ID` and submit
+* Enjoy having your access token
+
+### Using existing client
+* Go to your app's [settings page](https://www.instagram.com/developer/clients/manage/)
+* Go to security tab
+* Add `https://instauth.netlify.com/` to `Valid redirect URIs` text field
+* Make sure `implicit OAuth` is enabled. Copy `Client ID` from the same page
 * Go to [https://instauth.netlify.com/](https://instauth.netlify.com/)
 * Paste `Client ID` and submit
 * Enjoy having your access token
