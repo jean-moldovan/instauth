@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<head>
+  <link rel="stylesheet" href="style.css">
+  <title>InstAuth</title>
+</head>
+
+<body>
+  <div class="container">   
+    <header>
+      <h1>InstAuth</h1>
+      <span class="sub">Instagram Authentication Client</span>
+    </header>
+
+    <content>
+      <div id="loading">Loading...</div>
+
+      <form id="loginForm">
+        <input type="text" id="client_id" placeholder="Paste your Client ID here">
+        <button type="submit">Login</button>
+      </form>
+
+      <div id="token"></div>
+      <div id="home"><a href="/">Try another</a></div>          
+    </content>
+    
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+          integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+          crossorigin="anonymous">
+  </script>   
+  <script src="main.js"></script>
+</body>

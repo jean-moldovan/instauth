@@ -1,0 +1,94 @@
+html, body {
+  height: 100%;
+  font-family: Courier New, Courier, monospace;
+}
+
+body {
+  height: 85%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#loginForm, #token, #home {
+  display: none;
+}
+
+#loginForm input {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+#loginForm button {
+  margin-top: 10px;
+  background-color: rgba(0, 0, 255, 0.6);
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+#loginForm input,
+#loginForm button {
+  display: block;
+  width: 320px;
+  height: 40px;
+  font-size: 16px;
+  padding: 7px 4px;
+  border-radius: 2px;
+  box-sizing: border-box;
+}
+
+#token {
+  padding: 15px;
+  font-size: 18px;
+  font-weight: 300;
+  background-color: rgba(0, 255, 0, 0.2);
+  cursor: pointer;
+}
+
+#home {
+  margin-top: 20px;
+  text-align: center;
+}
+
+header {
+  margin: 0 0 50px 0;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 36px;
+}
+
+header h1:before,
+header h1:after {
+  content: "\0022";
+  padding: 0 10px;
+  color: rgba(0, 0, 255, 0.6);
+  font-weight: 300;
+  font-size: 90%;
+}
+
+header .sub {
+  color: gray;
+  font-size: 14px;
+}
+
+.container {
+  padding: 20px;
+}
+
+@media (max-width: 640px) {
+  body {
+    align-items: normal;
+  }
+
+  #token {
+    padding: 10px;
+    font-size: 15px;
+    word-break: break-all;
+  }
+}
