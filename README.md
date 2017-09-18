@@ -34,4 +34,4 @@ If you still want to continue using it, you need to enable `implicit OAuth` in y
 * Add `https://instauth.netlify.com/` to `Valid redirect URIs` text field in your app's Security settings
 * Make sure `implicit OAuth` is enabled.
 * Go to [https://instauth.netlify.com/](https://instauth.netlify.com/)
-* Submit `Client Id`
+* Submit `Client ID`
