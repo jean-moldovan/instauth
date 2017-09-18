@@ -15,8 +15,15 @@
       <div id="loading">Loading...</div>
 
       <form id="loginForm">
-        <input type="text" id="client_id" placeholder="Paste your Client ID here">
-        <button type="submit">Login</button>
+        <input type="text" id="client_id" placeholder="Paste your Client ID here" required>
+        <ul>
+          <li><label><input type="checkbox" value="public_content">Public Content</label></li>
+          <li><label><input type="checkbox" value="follower_list">Follower List</label></li>
+          <li><label><input type="checkbox" value="comments">Comments</label></li>
+          <li><label><input type="checkbox" value="relationships">Relationships</label></li>
+          <li><label><input type="checkbox" value="likes">Likes</label></li>
+        </ul>
+        <button type="submit">Get Token !</button>
       </form>
 
       <div id="token"></div>

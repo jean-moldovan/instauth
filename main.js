@@ -40,12 +40,25 @@ function init() {
 
   function login() {
     var client_id = $('#client_id').val();
-  
-    window.location.href = loginUrl +
+    var scope = buildScope();
+    var redirectTo = loginUrl +
       '?client_id=' + client_id +
       '&redirect_uri=' + window.encodeURIComponent(window.location.href) +
+      (scope.length ? '&scope=' + scope : '') +
       '&response_type=token';
+  
+    window.location.href = redirectTo;
 
     return false;
+  }
+
+  function buildScope() {
+    var str = '';
+
+    $('#loginForm input[type=checkbox]:checked').each(function () {
+      str += $(this).val() + '+';
+    });
+
+    return str.replace(/\+$/, '');
   }
 }
