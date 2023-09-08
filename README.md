@@ -1,4 +1,4 @@
-# InstAuth
+# InstAuth (Deprecated)
 
 Authentication client for [Instagram API](https://www.instagram.com/developer/).
 
